@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aghada Taekwondo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            display: flex;
+            height: 100vh;
+            background-color: #000;
+            color: white;
+        }
+        .hero-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+            background: rgba(0,0,0,0.5);
+        }
+        .logo {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .hero-heading {
+            font-family: 'Oswald', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero-subtext {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: purple;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        .hero-right {
+            flex: 1;
+                background-image: url('taekwondo-class.jpg.png');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: black;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: purple;
+        }
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+            color: black;
+        }
+        .section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #4B2354;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+        .footer-links a:hover {
+            color: #ddd;
+        }
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="coach.html">Coach</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-left">
+            <img src="logo.jpg" alt="Aghada Taekwondo Logo" class="logo">
+            <p class="hero-subtext">Here we are committed to helping kids discover the power within. Whether it’s to improve fitness, self-esteem, or develop discipline and build Taekwon-do skills, our Taekwondo classes are designed to help your children.</p>
+            <div class="buttons">
+                <a href="contact.html" class="btn btn-primary">Book Free Trial</a>
+                <a href="timetable.html" class="btn btn-secondary">View Timetable</a>
+            </div>
+        </div>
+        <div class="hero-right"></div>
+    </section>
+    <section class="section" id="our-story">
+        <h2>Our Story</h2>
+        <p>Our club has been only opened in 2023 but has grown rapidly we hope to see new students joining us in the coming new school year. We have students with ages varying from 4-13 years old. It is a great way to make new friends and build on social skills.</p>
+    </section>
+    <section class="section" id="our-philosophy">
+        <h2>Our Classes</h2>
+        <p>Our classes are designed to be accessible to students of all skill levels, and we offer a supportive and encouraging environment where everyone feels valued and empowered.</p>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <img src="logo.jpg" alt="Aghada Taekwondo Logo" class="footer-logo">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/aghada_taekwondo/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100093983679748" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="tel:0894223993"><i class="fas fa-phone"></i> 089 422 3993</a>
+                <a href="mailto:ita.aghada@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <p>&copy; 2024 Aghada Taekwondo. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

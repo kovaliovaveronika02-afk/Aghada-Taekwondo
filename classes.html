@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        header {
+            background-color: black;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: purple;
+        }
+        .nav-logo {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 40px;
+        }
+        .classes-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .banner {
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer {
+            background-color: #4B2354;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+        .footer-links a:hover {
+            color: #ddd;
+        }
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="coach.html">Coach</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Class Timetable</h1>
+        <img src="classes.png" alt="Taekwondo Classes" class="classes-image">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Age Group</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Thursdays</td>
+                    <td>4:10pm - 5:00pm</td>
+                    <td>7+ years</td>
+                </tr>
+                <tr>
+                    <td>Fridays</td>
+                    <td>4:00pm - 4:50pm</td>
+                    <td>4-6 years</td>
+                </tr>
+                <tr>
+                    <td>Fridays</td>
+                    <td>4:40pm - 5:30pm</td>
+                    <td>7+ years</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="banner">
+        Your First Class is a FREE TRIAL!
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="logo.jpg" alt="Aghada Taekwondo Logo" class="footer-logo">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/aghada_taekwondo/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100093983679748" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="tel:0894223993"><i class="fas fa-phone"></i> 089 422 3993</a>
+                <a href="mailto:ita.aghada@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <p>&copy; 2024 Aghada Taekwondo. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

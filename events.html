@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Aghada Taekwondo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+        header {
+            background-color: black;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: purple;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .events-section {
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        .events-section h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: black;
+        }
+        .events-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .events-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .events-list .date {
+            color: #6A1B9A;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .events-list .icon {
+            margin-right: 10px;
+            color: #6A1B9A;
+        }
+        .calendar {
+            max-width: 400px;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .calendar-header {
+            background-color: #6A1B9A;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Oswald', sans-serif;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .calendar-header button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .calendar-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .calendar-table th, .calendar-table td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .calendar-table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+        }
+        .calendar-table .highlighted {
+            background-color: #6A1B9A;
+            color: white;
+            font-weight: bold;
+        }
+        .calendar-table .march::after {
+            content: " - Dublin Open";
+            font-size: 0.8rem;
+            display: block;
+            color: #ffeb3b;
+        }
+        .calendar-table .april::after {
+            content: " - Club Grading";
+            font-size: 0.8rem;
+            display: block;
+            color: #ffeb3b;
+        }
+        .calendar-table .sept::after {
+            content: " - ITF World Cup";
+            font-size: 0.8rem;
+            display: block;
+            color: #ffeb3b;
+        }
+        .calendar-table .june::after {
+            content: " - End of Term";
+            font-size: 0.8rem;
+            display: block;
+            color: #ffeb3b;
+        }
+        footer {
+            background-color: #4B2354;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .footer-logo {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1rem;
+        }
+        .footer-links a:hover {
+            color: #ddd;
+        }
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Coach</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Events</h1>
+        <section class="events-section">
+            <h2>Important Dates & Events</h2>
+            <ul class="events-list">
+                <li>
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <span class="date">Saturday, 28th March 2026:</span> Dublin Open
+                </li>
+                <li>
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <span class="date">Saturday, 11th April 2026:</span> Club Grading
+                </li>
+                <li>
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <span class="date">June 17th to 20th 2026:</span> Summer Camp
+                </li>
+                <li>
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <span class="date">Tuesday, 30th June 2026:</span> End of Term
+                </li>
+                <li>
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <span class="date">Monday, 28th September 2026:</span> ITF World Cup - Benidorm
+                </li>
+            </ul>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button id="prev">&lt;</button>
+                    <span id="month">March 2026</span>
+                    <button id="next">&gt;</button>
+                </div>
+                <table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calendar-body">
+                        <!-- Calendar days will be generated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <img src="logo.jpg" alt="Aghada Taekwondo Logo" class="footer-logo">
+            <div class="footer-links">
+                <a href="https://www.instagram.com/aghada_taekwondo/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100093983679748" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="tel:0894223993"><i class="fas fa-phone"></i> 089 422 3993</a>
+                <a href="mailto:ita.aghada@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <p>&copy; 2024 Aghada Taekwondo. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const months = [
+            {
+                name: 'March 2026',
+                days: 31,
+                startDay: 6, // 0=Sun, 6=Sat
+                highlight: 28,
+                labelDay: 28,
+                class: 'march'
+            },
+            {
+                name: 'April 2026',
+                days: 30,
+                startDay: 2, // Tue
+                highlight: 11,
+                labelDay: 11,
+                class: 'april'
+            },
+            {
+                name: 'June 2026',
+                days: 30,
+                startDay: 0, // Sun
+                highlights: [17, 18, 19, 20, 30],
+                labelDay: 30,
+                class: 'june'
+            },
+            {
+                name: 'September 2026',
+                days: 30,
+                startDay: 5, // Fri
+                highlight: 28,
+                labelDay: 28,
+                class: 'sept'
+            }
+        ];
+
+        let currentMonthIndex = 0;
+
+        function renderCalendar() {
+            const month = months[currentMonthIndex];
+            document.getElementById('month').textContent = month.name;
+
+            const tbody = document.getElementById('calendar-body');
+            tbody.innerHTML = '';
+
+            let day = 1;
+            for (let week = 0; week < 6; week++) {
+                const tr = document.createElement('tr');
+                for (let wd = 0; wd < 7; wd++) {
+                    const td = document.createElement('td');
+                    if (week === 0 && wd < month.startDay) {
+                        td.textContent = '';
+                    } else if (day > month.days) {
+                        td.textContent = '';
+                    } else {
+                        td.textContent = day;
+                        if (month.highlights && month.highlights.includes(day)) {
+                            td.classList.add('highlighted', month.class);
+                        } else if (month.highlight && day === month.highlight) {
+                            td.classList.add('highlighted', month.class);
+                        }
+                        if (day === month.labelDay) {
+                            td.classList.add('label');
+                        }
+                        day++;
+                    }
+                    tr.appendChild(td);
+                }
+                tbody.appendChild(tr);
+                if (day > month.days) break;
+            }
+        }
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentMonthIndex = (currentMonthIndex - 1 + months.length) % months.length;
+            renderCalendar();
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentMonthIndex = (currentMonthIndex + 1) % months.length;
+            renderCalendar();
+        });
+
+        renderCalendar();
+    </script>
+</body>
+</html>
